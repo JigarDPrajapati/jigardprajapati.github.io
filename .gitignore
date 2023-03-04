@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+/.pnp
+.pnp.js
+
+# Build files
+build/
+dist/
+*.zip
+*.tar.gz
+
+# IDE files
+.idea/
+.vscode/
