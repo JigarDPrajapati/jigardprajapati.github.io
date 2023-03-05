@@ -9,7 +9,7 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
-  assetPrefix: './',
+  assetPrefix: '/jigardprajapati.github.io/',
   images:{
     unoptimized: true
   }
