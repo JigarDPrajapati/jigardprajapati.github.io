@@ -12,3 +12,9 @@ dist/
 # IDE files
 .idea/
 .vscode/
+
+# Next.js
+/.next/
+/out/
+/.npm/
+/*.log
