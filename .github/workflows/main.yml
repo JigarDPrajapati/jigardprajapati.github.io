@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch name
+  pull_request: # Optional - enables the workflow for pull requests
+    branches:
+      - main # Change this to your main branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Use the latest Ubuntu LTS version as the environment for the job
+
+    steps:
+    - name: Checkout code # Checks out the latest version of your code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies # Installs Node.js and your project dependencies
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    # Replace '16' with the Node.js version you're using in your project
+
+    - name: Build and export the app # Builds and exports the Next.js app to a directory called 'out'
+      run: npm run build && npm run export
+
+    - name: Deploy to GitHub Pages # Deploys the 'out' directory to the 'gh-pages' branch
+      uses: JamesIves/github-pages-deploy-action@4.1.3
+      with:
+        branch: gh-pages # Change this to the branch you want to deploy to
+        folder: out # Change this to the directory where the output files are located
+        clean: true # Optional - deletes old files before deploying the new ones
+        token: ${{ secrets.GH_TOKEN }} # Uses the 'GH_TOKEN' secret to authenticate with GitHub
