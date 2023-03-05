@@ -12,9 +12,7 @@ const nextConfig = {
     scrollRestoration: true,
   },
   assetPrefix: isProd ? '/personal-spotlight/' : '',
-  images: {
-    unoptimized: true,
-  },
+  distDir: 'out'
 }
 
 const withMDX = nextMDX({

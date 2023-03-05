@@ -2,6 +2,7 @@
 node_modules/
 /.pnp
 .pnp.js
+package-lock.json
 
 # Next.js
 /.next/
@@ -18,3 +19,4 @@ dist/
 # IDE files
 .idea/
 .vscode/
+.DS_Store
