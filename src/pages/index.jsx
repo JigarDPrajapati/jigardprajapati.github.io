@@ -256,16 +256,22 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Jigar's Tech and Chuckles Hub!</title>
+        <title>Jigar D. Prajapati's Tech and Chuckles Hub!</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="Hello and welcome to my corner of the internet! As a software
+          developer, I spend a lot of time in front of my computer, but that
+          doesn't mean I don't know how to have a good time. Here on my
+          website, you'll find a mix of tech talk and humor that I hope will
+          put a smile on your face. From the latest tech trends to silly jokes
+          and stories, there's something for everyone. So sit back, relax, and
+          enjoy the laughs!"
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Jigar's Tech and Chuckles Hub!
+            Jigar D. Prajapati's Tech and Chuckles Hub!
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Hello and welcome to my corner of the internet! As a software

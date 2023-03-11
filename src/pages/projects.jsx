@@ -3,47 +3,18 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import npmLogo from '@/images/photos/npmLogo.jpg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'virtual360-react',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
-  },
-  {
-    name: 'Animaginary',
-    description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'Virtual360 is an amazing pure React component which stitches together set of images into a smooth 360-degree image..',
+    link: {
+      href: 'https://www.npmjs.com/package/virtual360-react',
+      label: 'virtual360-react npm package',
+    },
+    logo: npmLogo,
   },
 ]
 
@@ -62,15 +33,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Jigar D. Prajapati</title>
         <meta
           name="description"
           content="Things I’ve made trying to put my dent in the universe."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Boldly Going Where Few Have Gone Before: My Quest to Leave a Mark on the Universe."
+        intro="I'm working on projects that even Elon Musk and SpaceX would admire. I've got a robotic cat that doubles as a SpaceX rocket, a smart fridge that's also a time machine, and a self-driving car that's a personal masseuse. But my biggest achievement? A lightbulb that teleports you (still in beta). Check out my open-source projects and contribute your genius ideas! Who knows, maybe Elon will give me a call."
       >
         <ul
           role="list"
