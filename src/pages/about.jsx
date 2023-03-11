@@ -107,7 +107,7 @@ export default function About() {
                 Follow on Instagram
               </SocialLink> */}
               <SocialLink
-                href="https://github.com/MrUser420"
+                href="https://github.com/JigarDPrajapati"
                 icon={GitHubIcon}
                 className="mt-4"
               >

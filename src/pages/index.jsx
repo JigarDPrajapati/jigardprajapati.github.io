@@ -294,7 +294,7 @@ export default function Home({ articles }) {
               icon={InstagramIcon}
             /> */}
             <SocialLink
-              href="https://github.com/MrUser420"
+              href="https://github.com/JigarDPrajapati"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
